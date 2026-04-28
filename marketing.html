@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marketing | Joker’s Candy Gems</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-<style>
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#ff512f,#dd2476);
-color:white;
-}
-.container{
-padding:40px 20px;
-max-width:900px;
-margin:auto;
-}
-.card{
-background:rgba(255,255,255,0.1);
-padding:30px;
-border-radius:20px;
-backdrop-filter:blur(15px);
-}
-h1{text-align:center;}
-a{color:#ffff00;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Marketing | Joker Jewels Candy Gems</title>
+    <style>
+        :root { --bg: #0d0221; --accent: #ff00c8; --glass: rgba(255, 255, 255, 0.05); --text: #ffffff; }
+        body { margin: 0; padding: 0; font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text); display: flex; flex-direction: column; align-items: center; }
+        .container { width: 100%; max-width: 500px; padding: calc(env(safe-area-inset-top) + 60px) 20px 40px; box-sizing: border-box; }
+        .nav { display: flex; justify-content: space-around; background: var(--glass); backdrop-filter: blur(20px); padding: 15px; border-radius: 25px; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.1); }
+        .nav a { text-decoration: none; color: rgba(255,255,255,0.6); font-size: 13px; font-weight: 600; text-transform: uppercase; }
+        .card { background: var(--glass); border: 1px solid rgba(255,255,255,0.1); border-radius: 35px; padding: 35px; backdrop-filter: blur(30px); }
+        h1 { color: var(--accent); font-size: 24px; margin-bottom: 20px; }
+        p { color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 20px; }
+        .highlight { border-left: 3px solid var(--accent); padding-left: 15px; font-style: italic; color: #fff; }
+    </style>
 </head>
 <body>
-<div class="container">
-<div class="card">
-<h1>About Joker’s Candy Gems</h1>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="marketing.html" style="color: var(--accent);">Dev Story</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Help</a>
+        </div>
 
-<p>
-Joker’s Candy Gems is developed by Serhii Svitohrai — an independent beginner developer passionate about creating engaging mobile experiences.
-</p>
-
-<p>
-This app currently does not include paid features or subscriptions. 
-However, future updates may introduce optional premium features to support ongoing development and allow sustainable growth.
-</p>
-
-<p>
-My goal is to continuously improve quality, stability and value for users.
-Every update is made with dedication and respect for players.
-</p>
-
-<p>
-Thank you for supporting independent development.
-</p>
-
-<a href="index.html">Back to Home</a>
-
-</div>
-</div>
+        <div class="card">
+            <h1>Our Mission</h1>
+            <p>I am <strong>Serhii Svitohrai</strong>, a passionate beginner developer. My journey started with a simple goal: to bring value through digital experiences.</p>
+            <div class="highlight">
+                <p>Every pixel in Joker Jewels Candy Gems was crafted with extreme effort and care.</p>
+            </div>
+            <p>Currently, the app is 100% free with <strong>no paid features or subscriptions</strong>. I want everyone to enjoy the full experience without barriers.</p>
+            <p>In the future, I plan to introduce premium features to support further development and innovation, but my focus will always be on providing high-quality value first.</p>
+            <p>Thank you for being part of my early journey!</p>
+        </div>
+    </div>
 </body>
 </html>

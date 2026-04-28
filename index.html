@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joker’s Candy Gems | Developer</title>
-<meta name="description" content="Official developer page of Serhii Svitohrai and the app Joker’s Candy Gems.">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-<style>
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#1a0026,#32004d,#4b0082);
-color:white;
-overflow-x:hidden;
-}
-.container{
-padding:40px 20px;
-max-width:900px;
-margin:auto;
-}
-.card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(15px);
-padding:30px;
-border-radius:20px;
-box-shadow:0 0 30px rgba(255,0,255,0.3);
-animation:fadeIn 1.2s ease-in-out;
-}
-h1{
-font-weight:600;
-font-size:2rem;
-background:linear-gradient(90deg,#ff00cc,#ff9900);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-.btn{
-display:inline-block;
-margin:10px 5px;
-padding:12px 20px;
-border-radius:50px;
-background:linear-gradient(90deg,#ff00cc,#ff9900);
-color:white;
-text-decoration:none;
-transition:0.3s;
-}
-.btn:hover{
-transform:scale(1.05);
-box-shadow:0 0 15px #ff00cc;
-}
-footer{
-margin-top:40px;
-font-size:0.9rem;
-opacity:0.8;
-}
-@keyframes fadeIn{
-from{opacity:0; transform:translateY(20px);}
-to{opacity:1; transform:translateY(0);}
-}
-@media(max-width:600px){
-h1{font-size:1.5rem;}
-.card{padding:20px;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Serhii Svitohrai | Joker Jewels Candy Gems</title>
+    <style>
+        :root {
+            --bg: #0d0221;
+            --accent: #ff00c8;
+            --gem-green: #00ffcc;
+            --glass: rgba(255, 255, 255, 0.05);
+            --text: #ffffff;
+        }
+        body {
+            margin: 0; padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+            background: var(--bg);
+            background-image: radial-gradient(circle at 10% 20%, rgba(255, 0, 200, 0.1) 0%, transparent 40%),
+                              radial-gradient(circle at 90% 80%, rgba(0, 255, 204, 0.1) 0%, transparent 40%);
+            color: var(--text);
+            display: flex; flex-direction: column; align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%; max-width: 500px;
+            padding-top: calc(env(safe-area-inset-top) + 60px);
+            padding-bottom: 40px; box-sizing: border-box;
+            display: flex; flex-direction: column; gap: 25px; padding-left: 20px; padding-right: 20px;
+        }
+        .nav {
+            display: flex; justify-content: space-around;
+            background: var(--glass); backdrop-filter: blur(20px);
+            padding: 15px; border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky; top: 60px; z-index: 100;
+        }
+        .nav a {
+            text-decoration: none; color: rgba(255,255,255,0.6); font-size: 13px;
+            font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+            padding: 8px 12px; transition: 0.3s;
+        }
+        .nav a.active { color: var(--gem-green); text-shadow: 0 0 10px var(--gem-green); }
+        
+        .card {
+            background: var(--glass); border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 35px; padding: 35px; text-align: center;
+            backdrop-filter: blur(30px); animation: fadeIn 0.8s ease;
+        }
+        .app-icon {
+            width: 100px; height: 100px;
+            background: linear-gradient(135deg, var(--accent), var(--bg));
+            border-radius: 22px; margin: 0 auto 25px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 50px; box-shadow: 0 15px 35px rgba(255, 0, 200, 0.3);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        h1 { font-size: 26px; margin: 0; background: linear-gradient(to right, #fff, var(--gem-green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .dev-name { font-size: 14px; color: rgba(255,255,255,0.5); margin-top: 10px; }
+        .btn-main {
+            background: linear-gradient(90deg, var(--accent), #7000ff);
+            color: white; padding: 20px; border-radius: 20px;
+            text-decoration: none; font-weight: 700; text-align: center;
+            margin-top: 10px; transition: 0.3s; box-shadow: 0 10px 20px rgba(255, 0, 200, 0.2);
+        }
+        .btn-main:active { transform: scale(0.95); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
 </head>
 <body>
-<div class="container">
-<div class="card">
-<h1>Joker’s Candy Gems</h1>
-<p><strong>Developer:</strong> Serhii Svitohrai</p>
-<p><strong>Contact:</strong> teodordy@ukr.net</p>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="marketing.html">Dev Story</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Help</a>
+        </div>
 
-<p>
-Joker’s Candy Gems is a colorful and engaging mobile experience created with passion and dedication. 
-The project reflects my commitment as a beginner developer who continuously improves quality, stability and value.
-</p>
+        <div class="card">
+            <div class="app-icon">🃏</div>
+            <h1>Joker Jewels Candy Gems</h1>
+            <div class="dev-name">Developed by Serhii Svitohrai</div>
+            <p style="color: rgba(255,255,255,0.7); line-height: 1.6; margin-top: 20px;">
+                Dive into a world of brilliant gems and joker surprises. I create apps that combine smooth performance with engaging visuals.
+            </p>
+        </div>
 
-<a href="privacy.html" class="btn">Privacy Policy</a>
-<a href="support.html" class="btn">Support</a>
-<a href="marketing.html" class="btn">Marketing</a>
-
-<footer>
-© 2026 Serhii Svitohrai. All rights reserved.
-</footer>
-</div>
-</div>
+        <a href="marketing.html" class="btn-main">View My Vision</a>
+    </div>
 </body>
 </html>
